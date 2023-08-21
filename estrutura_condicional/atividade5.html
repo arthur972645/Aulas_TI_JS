@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let bairro; 
+
+       bairro = prompt("Digite seu bairro: ");
+
+       bairro = bairro .toUpperCase()
+       if(bairro === ''){//essas aspas é pra se causo vc não digite nada
+       alert("Digite um bairro vaido")
+       location.reload();
+       }else{
+        switch (bairro){
+            case "ANTARES": 
+                alert("valor do ferete $7,00")
+            break;
+            case "BARRO DURO":
+                alert("Valor do frete $5,00")
+            break;
+            case "PAJUÇARA":
+            case "PONTA VERDE": 
+            case "JATIUCA":  
+                alert("Valor do frente: $15,00")
+            break
+        }
+       }
+
+
+    </script>
+</body>
+</html>

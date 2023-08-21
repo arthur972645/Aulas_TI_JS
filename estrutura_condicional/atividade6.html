@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valorS = Number(prompt("Quanto o senhor deseja sacar? "))
+        
+        if(valorS % 10 == 0){
+            var n1 = valorS / 100
+            var n2 = valorS % 100 /  50
+            var n3 = valorS % 100 % 50 / 10
+            
+            alert("notas: "+ parseInt(n1)+" notas de 100 \nnotas: "+ parseInt(n2)+" notas de 50 \nnotas: "+ parseInt(n3)+" notas de 10")
+        }else{
+            alert("Não é possivel sacar com as notas disponiveis")
+            window.location.reload(true)
+        }
+        window.location.reload(true)
+        
+
+
+
+    </script>
+</body>
+</html>

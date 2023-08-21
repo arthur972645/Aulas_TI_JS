@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let altura = Number(prompt("Sua altura em metros : "));
+        let sexo = prompt("Digite seu sexo \n M - Masculino \n F - Feminino")
+        
+       // toUpperCase() - caixa alta
+       // toLowerCase() - caixa baixa
+
+       sexo = sexo.toUpperCase()
+//VALIDAÇÃO
+        if(isNaN(altura) || altura === 0 || altura > 2.51){
+            alert("Digite uma altura valida")
+            location.reload()
+        }else if(sexo != "M" && sexo != "F"){
+            alert("Digite um sexo valido")
+            location.reload()
+        }
+//LOGICA
+        if(sexo === "F"){
+            let pesoF = 21 * Math.pow(altura, 2)
+            alert(`O peso é de: ${pesoF}`)
+        }else if(sexo === "M"){
+            let pesoM = 22 * Math.pow(altura, 2)
+            alert(`O peso é de: ${pesoM}`)
+        }
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

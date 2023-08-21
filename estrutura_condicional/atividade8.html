@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let velocidadeV = Number(prompt("Qual é a velocide permitida da via?: "))
+        let velocidadeC = Number(prompt("Digite a velocidade que vc tava na via: "))
+
+        if(isNaN(velocidadeV) || velocidadeV <= 0.0){
+            alert("Digite um numero valido na velocidade da via")
+            location.reload()
+        }
+        else if(isNaN(velocidadeC) || velocidadeC <= 0.0){
+            alert("Digite um numero valido na sua velocidade")
+            location.reload()
+        }
+        
+       else if(velocidadeC <= velocidadeV){
+            alert("Sem multa")
+        }
+        else if(velocidadeC <= velocidadeV * 1.2){
+            alert("Multa leve")
+        }
+        else{
+            alert("Mula pesada")
+        }
+        window.location.reload(true)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let triangulo1 = Number(prompt("DIgite uma lado de um triangulo")); //apesentação das variaveis
+        if(isNaN(triangulo1) || triangulo1 <= 0){ //validção 
+            alert("digite um valor valido")
+            location.reload()
+        }
+        let triangulo2 = Number(prompt("DIgite uma lado de um triangulo"));
+        if(isNaN(triangulo2) || triangulo2 <= 0){
+            alert("digite um valor valido")
+            location.reload()
+        }
+        let triangulo3 = Number(prompt("DIgite uma lado de um triangulo"));
+        if(isNaN(triangulo3) || triangulo3 <= 0){
+            alert("Digite um valor valido")
+            location.reload()
+        }
+        if(triangulo1 > triangulo2 + triangulo3 || triangulo2 > triangulo1 + triangulo3 || triangulo3 > triangulo2 + triangulo1){
+            alert("Não pode forma um triangulo")
+        }
+        else if(triangulo1 === triangulo2 && triangulo1 === triangulo3){
+            alert("Trianhulo equilatero")
+        }
+        else if(triangulo1 === triangulo2 && triangulo2 != triangulo3 && triangulo3 != triangulo1 || triangulo3 === triangulo1 && triangulo1 != triangulo2 && triangulo3 != triangulo1 || triangulo2 === triangulo3 && triangulo2 != triangulo1 && triangulo3 != triangulo1){
+            alert(" triangulo Isoceles")
+        }
+        else{
+            alert("tringulo escaleno")
+        }
+        window.location.reload(true)
+            
+        
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

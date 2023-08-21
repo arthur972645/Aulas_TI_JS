@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const nota1 = Number(prompt("Nota 1: "));
+        const nota2 = Number(prompt("Nota 2: "));
+        const nota3 = Number(prompt("Nota 3: "));
+        
+//VALIDAÇÃO
+        if(isNaN(nota1) || nota1 > 10 || nota1 < 0){
+        alert(`Nota ${nota1} não é válida`)
+        location.reload()
+        }else if(isNaN(nota2) || nota2 > 10 || nota2 < 0){
+        alert(`Nota ${nota2} não é válida`)
+        location.reload
+        }else if(isNaN(nota3) || nota3 > 10 || terceiraNota < 0){
+    alert(`Nota ${terceiraNota} não é válida`)
+    location.reload()
+}else if(isNan(quartaNota) || quartaNota > 10 || quartaNota < 0){
+        alert(`Nota ${nota3} não é válida`)
+        location.reload()
+        }
+//LOGICA
+        
+        const mediaA = (((nota1 + nota2 + nota3 + nota4) / 4).toFixed(2))
+
+        if(mediaA >= 7){
+            document.write("aprovado como "+mediaA)
+        }else{
+            document.write("Reprovado buroo")
+        }
+
+    </script>
+</body>
+</html>
