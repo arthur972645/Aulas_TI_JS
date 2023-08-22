@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // O pais A tera 24 mil habitantes por ano 
+        // O pais B tera 3 mil habtantes por ano
+        // A=80.000
+        // B=200.000
+
+        // let paisA = 80000
+        // let taxaA = 0.3
+
+        // let paisB = 200000
+        // let taxaB = 0.015
+        
+
+        // for(let anos = 0; paisA < paisB; anos++){
+        //     paisA = paisA * taxaA
+        //     paisB = paisB * taxaB
+        // }
+        // console.log(anos)
+
+        let populacaoA = 80000;
+let taxaCrescimentoA = 0.03;
+
+let populacaoB = 200000;
+let taxaCrescimentoB = 0.015;
+
+let anos;
+
+for (anos = 0; populacaoA < populacaoB; anos++) {
+    populacaoA += populacaoA * taxaCrescimentoA;
+    populacaoB += populacaoB * taxaCrescimentoB;
+}
+
+console.log(`Serão necessários ${anos} anos para que a população do país A ultrapasse a população do país B.`);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
