@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//O do while vaiser utilizado como uma forma de validação
+//SO vai servir de declarar a variavel antes 
+        
+        let  numero  // é melhor usar assim, declarando a variavel de forma globall
+        //VALIDAÇÃO, usa essa forma de validação
+        do{
+           
+            numero = Number(prompt("Digite um numero: ")) //vai voltar ate ser um numero valido sem precisar do location.reloud
+                if(numero === 0 || isNaN(numero)){
+                    alert("Digite um numero valido")
+                
+                }
+        }while(numero === 0 || isNaN(numero)) //tenque repetir o mesmo  codigo dentro do if, ou outra condição como o true, que vai repetir so se for verdade
+        
+      
+        //LOGICA
+        for(let i = 0; numero >= i; i++){
+           if(i % 2 === 0){
+            document.write('\t'+i)
+           }
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

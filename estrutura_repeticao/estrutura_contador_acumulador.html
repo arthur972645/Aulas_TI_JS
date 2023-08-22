@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        alert("Digite [CANCELAR] para parar o codigo: ")
+        
+        let nomeConta, valorConta, total = 0, quantidade = 0
+        do{
+             nomeConta = prompt("Qual é a conta: ")
+             valorConta = Number(prompt("Digite o valor da conta: "))
+
+            if(valorConta === 0 || valorConta === isNaN(valorConta) || nomeConta === "CANCELAR" || valorConta === "CANCELAR"){
+                let sair = confirm("Deseja finalizar? ")
+                
+                if(sair){
+                    break
+                }else{
+                    continue
+                }
+            }
+
+            total = total + valorConta
+            document.write(nomeConta+" = "+valorConta+"<br>")
+            quantidade++
+            
+            }while(true)
+            document.write("O valor total sera de "+total+" e a quantidade de  contas = "+quantidade)
+       
+
+
+
+    </script>
+</body>
+</html>
