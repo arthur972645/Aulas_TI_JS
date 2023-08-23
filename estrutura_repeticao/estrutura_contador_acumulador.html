@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        
+        debugger
         alert("Digite [CANCELAR] para parar o codigo: ")
         
         let nomeConta, valorConta, total = 0, quantidade = 0
@@ -27,11 +27,11 @@
             }
 
             total = total + valorConta
-            document.write(nomeConta+" = "+valorConta+"<br>")
+            document.write(nomeConta+" = "+valorConta+"<br>") //Os valores vão sendo armazenados um a um, primeiro ele faz com os primeiros valores que vc colcoar, depois ele zera e faz com os segundos valores...
             quantidade++
             
-            }while(true)
-            document.write("O valor total sera de "+total+" e a quantidade de  contas = "+quantidade)
+            }while(true) // utilizamos o true pq la encima utilizamos o confirm, caso contrario, seria so repetir a mesma condição do if
+            document.write("O valor total sera de "+total+" e a quantidade de  contas = "+quantidade) // isso aqui so vai aparecer quando no confirmar vc clicar em ok
        
 
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger
+        alert("Digite [0.1] para romper a repetição")
+
+        let numero1, numero2, numero3
+
+        do{
+            numero1 = Number(prompt("Digite numnero 1: "))
+            numero2 = Number(prompt("Digite numnero 2: "))
+            numero3 = Number(prompt("Digite numnero 3: "))
+
+            if(numero1 === 0.1 || numero1 === isNaN(numero1)){
+                 let sair = confirm("Deseja encerrar?")
+            if(sair){
+                break
+            }else{
+                continue
+            }
+        }
+
+            if(numero1 < numero2 && numero2 < numero3){
+                document.write(numero1+","+numero2+","+numero3)
+            }
+            else if(numero1 < numero3 && numero3 < numero2){
+                document.write(numero1+","+numero3+","+numero2)
+            }
+            else if(numero2 < numero1 && numero1 < numero3){
+                document.write(numero2+","+numero1+","+numero3)
+            }
+            else if(numero2 < numero3 && numero3 < numero1){
+                document.write(numero2+","+numero3+","+numero1)
+            }
+            else if(numero3 < numero1 && numero1 < numero2){
+                document.write(numero3+","+numero1+","+numero2)
+            }
+            else if(numero3 < numero2 && numero2 < numero1){
+                document.write(numero3+","+numero2+","+numero1)
+            }
+
+        }while(true)
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
