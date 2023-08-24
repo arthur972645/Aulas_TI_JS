@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        
+        let num1, divisores = 0
+        do{
+            num1 = Number(prompt("Digite um numero"))
+            if(num1 <= 0.0 || isNaN(num1)){
+                alert("Digite um numero valido")
+            }
+        }while(num1 === 0.0 || isNaN(num1))
+
+        debugger
+        for(let i = 0; i <= num1; i++){
+            if(num1%i === 0){
+                divisores++
+            }
+        }
+            if(divisores === 2){
+                alert("O numero "+num1+" é primo")
+            }else{
+                alert("Não é primo "+num1)
+            }
+           
+          
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
