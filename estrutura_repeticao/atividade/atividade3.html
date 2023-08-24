@@ -9,11 +9,20 @@
 <body>
     <script>
 
-        alert("Digite um numero: ")
+        let numero = Number(prompt("Digite um numero: "))
+        let somaDivisao = 0
 
+        for(let i=1; i < numero; i++){
+            if(numero % i === 0){
+                somaDivisao += i
+            }
+        }
+        if(somaDivisao === numero){
+            alert(numero+" é um numero perfeito")
+        }else{
+            alert(numero+" não é um numero perfeito")
+        }
         
-
-
 
 
 
