@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger
+        let lista = [], quantidade = 0
+
+        do{
+            lista = prompt("DIgite sua lista")
+            if(lista == "finalizar"){
+                let sair = confirm("Deseja finalisar as compras? ")
+           if(sair){
+                break
+            }else{
+                continue
+            }
+        }
+        quantidade++
+        document.write(quantidade+"º"+lista+"<br>")
+        }while(true) 
+        
+        
+
+        
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
