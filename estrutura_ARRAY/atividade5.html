@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let vetor = [], positivo=[], negativo=[]
+        let cauntP = 0, cauntN = 0 
+
+        for(let i = 0; i < 4; i++){
+            vetor[i] = Number(prompt("Digite um valor para o indice "+i+" do vetor"))
+            if(vetor[i] >= 0){
+                positivo[cauntP] = vetor[i]
+                cauntP++
+            }else{
+                negativo[cauntN] = vetor[i]
+                cauntN++
+            }
+        }
+        if(positivo.length < 0){
+            alert("Vetor vazim")
+        }else{
+            for(let i = 0; i<pos.length;i++){
+                document.write(positivo[i])
+            }
+           
+        }
+
+        if(negativo.length < 0){
+            document.write("Vetor vazim")
+        }else{
+            document.write(negativo)
+        }
+       
+
+
+
+
+
+
+    </script>
+</body>
+</html>

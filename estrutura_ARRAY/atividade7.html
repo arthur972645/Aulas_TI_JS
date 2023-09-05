@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const idades = []
+        let idade, maiorIdade = 0, menorIdade = 1000000000000000000000
+
+        alert("Digite [F] para finalizar")
+
+        do{
+            idade = Number(prompt(`Digite uma idade`))
+
+            if(isNaN(idade)){
+                let sair = confirm("Deseja finalizar?")
+                    if(sair){
+                        break
+                    }else{
+                        continue
+                    }
+            }
+
+            idades.push(idade)
+
+        }while(true)
+
+        for(let i = 0; i < idades.length; i++){
+            if(idades[i] > maiorIdade){
+                maiorIdade = idades[i]
+        }
+        else if(idades[i] < menorIdade){
+            menorIdade = idades[i]
+        }
+    }
+
+    document.write(`maior - ${maiorIdade}<br>menor - ${menorIdade}`)
+        
+    
+
+    </script>
+</body>
+</html>
