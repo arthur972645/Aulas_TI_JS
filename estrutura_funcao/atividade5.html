@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger
+        let nome = [], salario = [], tempo = []
+
+        for(let i = 0; i < 2; i++){
+            nome[i] = prompt("NOME: ")
+            salario[i] = Number(prompt("SALARIO:"))
+            tempo[i] = Number(prompt("TEMPO: "))  
+    
+            if(salario[i] > 400 && tempo[i] < 5){
+                function semAumento(){
+                    document.write("<br>"+"NÃO VÃO TER DESCONTO:"+"<br>"+nome[i])
+                }
+                document.write(semAumento())
+            }
+            else if(tempo[i] > 5 && salario[i] < 400){
+                function comAumento35 (){
+                    let aumento = salario[i] * 1.35
+                    document.write("<br>"+"AUMENTO DE 35% "+"<br>"+nome[i]+" salario = "+aumento)
+                }
+                document.write(comAumento35())
+            }
+            else if(tempo[i] > 5 && salario[i] > 400){
+                function comAumento25 (){
+                    let aumento1 = salario[i] * 1.25
+                    document.write("<br>"+"AUMENTO DE 25% "+"<br>"+nome[i]+" salario = "+aumento1)
+                }
+                document.write(comAumento25())
+            }
+            else if(salario[i] > 400 ){
+                function comAumento15 (){
+                    let aumento2 = salario[i] * 1.15
+                    document.write("<br>"+"AUMENTO DE 15% "+"<br>"+nome[i]+" salario = "+aumento2)
+                }
+                document.write(comAumento15())
+            }
+
+           
+        }
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

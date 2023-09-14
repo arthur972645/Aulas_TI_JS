@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Usuario vai passar nota1, nota2, nota3 (A - Aritimética e  P - Ponderada)
+//Crair uma função que valide a nota / Peso(5,3,2). O usuário vai escolher  se quer A, P
+        debugger
+        let nota1 = Number(prompt("Digite o valor da nota 1"))
+        let nota2 = Number(prompt("Digite um valor da nota 2"))
+        let nota3 = Number(prompt("Digite um valor da nota 3"))
+        let calculo = prompt("Media aritimética (A) ou media ponderada (P)")
+       
+       
+        function validacao (nota1, nota2, nota3){
+            if(isNaN(nota1) || isNaN(nota2) || isNaN(nota3) & nota1 < 0 || nota2 < 0 || nota3 < 0){
+                alert("ERRRO!!! Digite um valor valido")
+            }
+        }
+
+        if(calculo === "A"){
+            function mediaA(nota1, nota2, nota3){
+            let mediaAritimética = (nota1 + nota2 + nota3) / 3
+            return mediaAritimética
+            }
+            document.write("Sua media aritimética é de: "+mediaA(nota1, nota2, nota3).toFixed(2))
+        }
+        else if(calculo ==="P"){
+            function mediaP(nota1, nota2, nota3){
+            let mediaPonderada = ((nota1 * 5) + (nota2 * 3) + (nota3 * 2)) / 10
+            mediaPonderada.toFixed(2)
+            return mediaPonderada
+            }
+            document.write("Sua media ponderada é de "+mediaP(nota1, nota2, nota3).toFixed(2))
+        }
+
+        validacao(nota1,nota2,nota3)
+
+        
+        
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
