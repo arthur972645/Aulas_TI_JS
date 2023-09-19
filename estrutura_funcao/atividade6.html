@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Problema: Sistema de Notas Escolares
+
+// Crie um programa que permita ao usuário calcular a média das notas de alunos e, em seguida, determinar se cada aluno foi aprovado ou reprovado de acordo com as seguintes regras:
+
+// A média para aprovação é 7.
+// Se a média do aluno for maior ou igual a 7, ele é aprovado.
+// Se a média do aluno for menor que 7, ele é reprovado.
+// Aqui está o que você deve fazer:
+
+// Crie um vetor que armazene as notas dos alunos. O tamanho do vetor pode ser determinado pelo usuário.
+
+// Crie uma função chamada calcularMedia que recebe o vetor de notas e retorna a média das notas.
+
+// Crie uma função chamada verificarStatus que recebe a média de um aluno como parâmetro e retorna "Aprovado" ou "Reprovado" com base nas regras mencionadas anteriormente.
+
+// Use um loop para solicitar as notas dos alunos ao usuário e armazená-las no vetor.
+
+// Calcule a média das notas chamando a função calcularMedia e, em seguida, chame a função verificarStatus para determinar o status de cada aluno.
+
+// Exiba o status de cada aluno, juntamente com sua média, na tela.
+
+        debugger
+        let quantidadeProvas, quantidadeAlunos, nota1,nota2, nota3, nome , totalProvas
+        
+        quantidadeAlunos = Number(prompt("Quantidade de alunos:"))
+        quantidadeProvas = Number(prompt("Provas feitas por aluno: "))
+        totalProvas = quantidadeAlunos * quantidadeProvas
+        
+        for(let i = 0; i < totalProvas; i++){
+            nome = prompt("NOME: ")
+            nota1 = prompt("DIGITE SUA PRIMEIRA NOTA")
+            nota2 = prompt("DIGITE SUA SEGUNDA NOTA")
+            nota3 = prompt("DIGITE SUA TERCEIRA NOTA")
+
+            function caucularMedia (nota1, nota2, nota3){
+                let mediaA = (nota1 + nota2 + nota3) / 3
+                document.write("A media do aluno "+nome+" sera de "+mediaA)
+            }
+            if(caucularMedia(nota1, nota2, nota3) >= 7){
+                document.write("APROVADO")
+                document.write(caucularMedia(nota1, nota2, nota3))
+            }
+            else{
+                document.write("REPROVADO")
+                document.write(caucularMedia(nota1, nota2, nota3))
+
+            }
+           
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

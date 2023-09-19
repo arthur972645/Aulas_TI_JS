@@ -18,30 +18,30 @@
     
             if(salario[i] > 400 && tempo[i] < 5){
                 function semAumento(){
-                    document.write("<br>"+"NÃO VÃO TER DESCONTO:"+"<br>"+nome[i])
+                    return "<br>"+"NÃO VÃO TER DESCONTO:"
                 }
                 document.write(semAumento())
             }
             else if(tempo[i] > 5 && salario[i] < 400){
                 function comAumento35 (){
                     let aumento = salario[i] * 1.35
-                    document.write("<br>"+"AUMENTO DE 35% "+"<br>"+nome[i]+" salario = "+aumento)
+                    return aumento
                 }
-                document.write(comAumento35())
+                document.write("<br>"+"AUMENTO DE 35% "+"<br>"+nome[i]+" salario = "+comAumento35())
             }
             else if(tempo[i] > 5 && salario[i] > 400){
                 function comAumento25 (){
                     let aumento1 = salario[i] * 1.25
-                    document.write("<br>"+"AUMENTO DE 25% "+"<br>"+nome[i]+" salario = "+aumento1)
+                    return aumento1
                 }
-                document.write(comAumento25())
+                document.write("<br>"+"AUMENTO DE 25% "+"<br>"+nome[i]+" salario = "+comAumento25())
             }
             else if(salario[i] > 400 ){
                 function comAumento15 (){
                     let aumento2 = salario[i] * 1.15
-                    document.write("<br>"+"AUMENTO DE 15% "+"<br>"+nome[i]+" salario = "+aumento2)
+                    return aumento2
                 }
-                document.write(comAumento15())
+                document.write("<br>"+"AUMENTO DE 15% "+"<br>"+nome[i]+" salario = "+comAumento15())
             }
 
            

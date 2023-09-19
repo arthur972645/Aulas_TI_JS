@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*VARIAVEL COMPOSTA: Consegue armazenar varios valores em uma mesma estrutura
+        
+        .O vetor vai servir para você usar uma quantidade menor de linhas no seu progama
+        . Voçe vai ter uma unica variavel que vai armazenar varios resultados e vai contar
+        apartir de um indeci, ou seja,  vai existir a varaivel a1, a2,a3... escrevendo uma
+        unica linha de codigo
+        .COMO DECLARAR UM VETOR: let nome da variavel =[0,1,2]
+        na programação semore comça do 0
+            .O que da dentro dos[] é o elementos, dentro do elemento tem os seus respectivos valores 
+             e cada valor/elemento representa uma chave ou indece, exemplo: o valor/elemento 0 se encontra no indice 0 
+        .O comando: numero[3] = 6 siginifica dizer que eu to pedido para que no indeci 3,
+        apareça o numero 6
+        .O comando numero.push(7), serve pra adicionar o valor entre[], na ultima posição de um array,
+        ou seja, ele cria mais um idice
+        .O comando numero.length determina o tamnho do vetor, da array, ele vai contar quantos indecis tem
+        .O comando numero.sort(), organiza os elementos deixando em ordem crescente
+        .COMO MOSTRAR OS NUMEROS DE CADA INDICE USANDO O FOR:
+            1.forma 
+            for let i = 0; i<numero.length; I++){
+                document.writ(numero[i])
+            }
+            2.forma
+            for(let i in nome da variavel){
+                document.write[i]
+            }
+        .O comando numero.indexOf(9) vai indentificar onde esse calor estar no meu vetor e vai retornar a chave dele*/
+
+        // let numero = [5, 8, 2, 9, 3]
+        //             //0, 1, 2, 3, 4
+        // //numero.sort(). tanto faz colocar assim, ou ja do document.write
+        // numero.push(1)// com isso a gente tem 6 idicis no total, vai criar e colocar esse numero 
+        // document.write(numero.sort()+"<br>")
+        
+        // document.write("O vetor tem "+numero.length+" Posições"+"<br>")
+        // document.write("O numero na posição 5 é igual a "+numero[5])
+        
+        // let numero = [5, 8, 2, 9, 3]
+        // for(let i = 0; i<numero.length; i++){
+        //     document.write("A posição "+i+" tem o valor "+numero[i]+"<br>")
+        // }
+debugger
+        let numero = [5, 8, 2, 9, 3]
+        
+        for(let i in numero){
+            document.write("A posição "+i+" tem o valor "+numero[i]+"<br>")
+            
+        }
+        
+        if(numero.indexOf(8) < 0){
+            document.write("Erro")
+        }else{
+            document.write("O o indice desse valor é "+numero.indexOf(8))
+        }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
